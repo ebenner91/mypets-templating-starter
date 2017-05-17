@@ -45,6 +45,14 @@
         <true>Welcome Back!</true>
         <false>It's been a while!</false>
       </check>
-        
+      
+      <h3>My pet</h3>
+      <p>{{ @myPet->getName() }}</p>
+      <p>{{ @myPet->getColor() }}</p>
+      
+      <check if="{{ @color == @myPet2->getColor()}}">
+        <true><img src="http://target.scene7.com/is/image/Target/15675150?wid=520&hei=520&fmt=pjpeg"></true>
+        <false>Nope</false>
+      </check>
     </body>
 </html>

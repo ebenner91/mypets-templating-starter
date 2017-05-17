@@ -41,6 +41,14 @@
         Welcome Back!
         <?php else: ?>It's been a while!
       <?php endif; ?>
-        
+      
+      <h3>My pet</h3>
+      <p><?= $myPet->getName() ?></p>
+      <p><?= $myPet->getColor() ?></p>
+      
+      <?php if ($color == $myPet2->getColor()): ?>
+        <img src="http://target.scene7.com/is/image/Target/15675150?wid=520&hei=520&fmt=pjpeg">
+        <?php else: ?>Nope
+      <?php endif; ?>
     </body>
 </html>

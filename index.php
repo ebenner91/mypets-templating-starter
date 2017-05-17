@@ -26,6 +26,11 @@
                                    'strawberry' => 'Strawberry Shortcake'));
         $f3->set('preferredCustomer', true);
         $f3->set('lastLogin', strtotime('-1 week'));
+        $pet = new Pet('Fido', 'pink');
+        $f3->set('myPet', $pet);
+        $pet2 = new Pet('Henrietta', 'purple');
+        $f3->set('myPet2', $pet2);
+        $f3->set('color', purple);
         
         echo Template::instance()->render('pages/info.html');
         

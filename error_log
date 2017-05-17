@@ -102,3 +102,15 @@
 [16-May-2017 21:33:17 America/Chicago] syntax error, unexpected ''secondary] ?></p>' (T_ENCAPSED_AND_WHITESPACE), expecting ']' [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:27]
 [16-May-2017 21:33:17 America/Chicago] [328/mypets-templating-starter/index.php:25] Preview->render()
 [16-May-2017 21:33:17 America/Chicago] [328/mypets-templating-starter/index.php:30] Base->run()
+[16-May-2017 22:17:32 America/Chicago] Call to a member function getName() on null [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:46]
+[16-May-2017 22:17:32 America/Chicago] [328/mypets-templating-starter/index.php:32] Preview->render()
+[16-May-2017 22:17:32 America/Chicago] [328/mypets-templating-starter/index.php:37] Base->run()
+[16-May-2017 22:26:28 America/Chicago] Call to a member function getName() on null [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:46]
+[16-May-2017 22:26:28 America/Chicago] [328/mypets-templating-starter/index.php:35] Preview->render()
+[16-May-2017 22:26:28 America/Chicago] [328/mypets-templating-starter/index.php:40] Base->run()
+[16-May-2017 22:27:01 America/Chicago] Call to a member function getName() on null [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:46]
+[16-May-2017 22:27:01 America/Chicago] [328/mypets-templating-starter/index.php:35] Preview->render()
+[16-May-2017 22:27:01 America/Chicago] [328/mypets-templating-starter/index.php:40] Base->run()
+[16-May-2017 22:27:26 America/Chicago] Call to a member function getColor() on null [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:49]
+[16-May-2017 22:27:26 America/Chicago] [328/mypets-templating-starter/index.php:35] Preview->render()
+[16-May-2017 22:27:26 America/Chicago] [328/mypets-templating-starter/index.php:40] Base->run()
