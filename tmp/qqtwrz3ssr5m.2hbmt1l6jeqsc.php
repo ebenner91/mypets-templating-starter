@@ -29,11 +29,18 @@
       
       <h3>Desserts</h3>
       <?php foreach (($desserts?:[]) as $key=>$value): ?>
-        <input type="checkbox"><?= $value ?> <br>
+        <input type="checkbox" value="<?= $key ?>"><?= $value ?> <br>
       <?php endforeach; ?>
 
+      <h3>Message</h3>
+      <?php if ($preferredCustomer): ?>
+        <strong>Thank you for being a preferred customer!</strong><br>
+      <?php endif; ?>
       
- 
+      <?php if ($lastLogin > strtotime('-1 month')): ?>
+        Welcome Back!
+        <?php else: ?>It's been a while!
+      <?php endif; ?>
         
     </body>
 </html>
