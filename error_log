@@ -96,3 +96,9 @@
 [06-May-2017 16:21:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tina/public_html/328/hello/tmp/3mbuebt34ig4c.3vzb1jrga60wg.php on line 32
 [06-May-2017 16:21:29 America/Chicago] Fatal error: syntax error, unexpected '}'
 [06-May-2017 16:21:29 America/Chicago] [328/hello/tmp/3mbuebt34ig4c.3vzb1jrga60wg.php:32] 
+[16-May-2017 21:02:20 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/ebenner/public_html/328/mypets-templating-starter/index.php on line 17
+[16-May-2017 21:02:44 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ebenner/public_html/328/mypets-templating-starter/index.php on line 19
+[16-May-2017 21:02:56 America/Chicago] PHP Parse error:  syntax error, unexpected '$f3' (T_VARIABLE) in /home/ebenner/public_html/328/mypets-templating-starter/index.php on line 24
+[16-May-2017 21:33:17 America/Chicago] syntax error, unexpected ''secondary] ?></p>' (T_ENCAPSED_AND_WHITESPACE), expecting ']' [/home/ebenner/public_html/328/mypets-templating-starter/tmp/qqtwrz3ssr5m.2hbmt1l6jeqsc.php:27]
+[16-May-2017 21:33:17 America/Chicago] [328/mypets-templating-starter/index.php:25] Preview->render()
+[16-May-2017 21:33:17 America/Chicago] [328/mypets-templating-starter/index.php:30] Base->run()
