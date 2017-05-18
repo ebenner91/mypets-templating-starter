@@ -29,7 +29,10 @@
             <div class="row">
                 
                 <h1>Order a Pet</h1>
-                
+                <check if='{{ @success }}'>
+                   <true><h2>Thank you for your order!</h2>
+                   <p>{{ @name }} the {{ @color }} {{ @type }} is on their way!</p></true>
+                </check>
             
                 <form action="new-pet" method="post" class="form-horizontal">
                     
@@ -39,7 +42,9 @@
                         <!-- Name -->
                         <label for="pet-name"
                                class="col-sm-1 control-label">Pet Name</label>
-                         
+                         <check if="{{ @errors['name'] }}">
+                                <p>{{ @errors['name'] }}</p>
+                            </check>
                         <div class="col-sm-3">
                             <input class="form-control" type="text" name="pet-name"
                                    id="pet-name" >
@@ -50,7 +55,9 @@
                                for="pet-color">Pet Color</label>
                          
                         <div class="col-sm-3">
-
+                            <check if="{{ @errors['color'] }}">
+                                <p>{{ @errors['color'] }}</p>
+                            </check>
                             <select class="form-control" name="pet-color" id="pet-color">
                                 <option>--Select--</option>
                                 <repeat group='{{ @colors }}' value='{{ @color }}'>
@@ -62,7 +69,9 @@
                         <!-- Type -->
                         <label class="col-sm-1 control-label"
                                for="pet-color">Pet Type</label>
-                        
+                        <check if="{{ @errors['type'] }}">
+                                <p>{{ @errors['type'] }}</p>
+                            </check>
                         <div class="col-sm-3">
 
                             <input class="form-control" type="text" name="pet-type" id="pet-type">

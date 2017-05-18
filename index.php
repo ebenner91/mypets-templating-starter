@@ -54,16 +54,25 @@
             include('model/validation-functions.php');
             
             if(!validColor($color)) {
-                echo "<p>color is not valid<p>";
+                $errors['color'] = "color is not valid";
             }
             
             if(!validName($name)) {
-                echo "<p> name is not valid </p>";
+                $errors['name'] =  "name is not valid";
             }
             
             if(!validType($type)) {
-                echo "<p> type is not valid </p>";
+                $errors['type'] =  "type is not valid";
             }
+            
+            $success = sizeof($errors) == 0;
+            
+            $f3->set('color', $color);
+            $f3->set('name', $name);
+            $f3->set('type', $type);
+            $f3->set('errors', $errors);
+            $f3->set('success', $success);
+            
         
         }
         

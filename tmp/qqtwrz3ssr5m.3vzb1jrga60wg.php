@@ -29,7 +29,10 @@
             <div class="row">
                 
                 <h1>Order a Pet</h1>
-                
+                <?php if ($success): ?>
+                   <h2>Thank you for your order!</h2>
+                   <p><?= $name ?> the <?= $color ?> <?= $type ?> is on their way!</p>
+                <?php endif; ?>
             
                 <form action="new-pet" method="post" class="form-horizontal">
                     
@@ -39,7 +42,9 @@
                         <!-- Name -->
                         <label for="pet-name"
                                class="col-sm-1 control-label">Pet Name</label>
-                         
+                         <?php if ($errors['name']): ?>
+                                <p><?= $errors['name'] ?></p>
+                            <?php endif; ?>
                         <div class="col-sm-3">
                             <input class="form-control" type="text" name="pet-name"
                                    id="pet-name" >
@@ -50,7 +55,9 @@
                                for="pet-color">Pet Color</label>
                          
                         <div class="col-sm-3">
-
+                            <?php if ($errors['color']): ?>
+                                <p><?= $errors['color'] ?></p>
+                            <?php endif; ?>
                             <select class="form-control" name="pet-color" id="pet-color">
                                 <option>--Select--</option>
                                 <?php foreach (($colors?:[]) as $color): ?>
@@ -62,7 +69,9 @@
                         <!-- Type -->
                         <label class="col-sm-1 control-label"
                                for="pet-color">Pet Type</label>
-                        
+                        <?php if ($errors['type']): ?>
+                                <p><?= $errors['type'] ?></p>
+                            <?php endif; ?>
                         <div class="col-sm-3">
 
                             <input class="form-control" type="text" name="pet-type" id="pet-type">
