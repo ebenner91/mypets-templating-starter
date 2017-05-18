@@ -6,6 +6,9 @@
         <title><?= $title ?></title>
     </head>
     <body>
+        
+        <a href='new-pet'>Add a new pet</a>
+        
       <h1><?= $title ?></h1>
       <p>User logged in as <?= $username ?> using <?= $password ?></p>
       <h3>Temperature</h3>

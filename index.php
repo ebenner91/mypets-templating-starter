@@ -35,6 +35,19 @@
         echo Template::instance()->render('pages/info.html');
         
     });
+    
+    //Default route
+    $f3->route('GET|POST /new-pet', function($f3) {
+        //if the form has been submitted
+        if(isset($_POST['submit'])) {
+            print_r($_POST);
+        }
+
+        $f3->set('colors', array('Pink', 'Blue', 'Red', 'Green', 'Yellow', 'Orange', 'Purple'));
+    
+        echo Template::instance()->render('pages/add-pet.html');
+        
+    });
 
     //Run fat free
     $f3->run();

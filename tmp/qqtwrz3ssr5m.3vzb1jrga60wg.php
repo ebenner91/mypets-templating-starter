@@ -53,9 +53,9 @@
 
                             <select class="form-control" name="pet-color" id="pet-color">
                                 <option>--Select--</option>
-                                <repeat group='{{ @colors }}' value='{{ @color }}'>
-                                    <option>{{ @color }}</option>
-                                </repeat>
+                                <?php foreach (($colors?:[]) as $color): ?>
+                                    <option><?= $color ?></option>
+                                <?php endforeach; ?>
                             </select>
                         </div>
                         
