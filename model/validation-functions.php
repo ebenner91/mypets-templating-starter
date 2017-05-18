@@ -13,5 +13,6 @@
     
     function validName($name)
     {
+        $name = trim($name);
         return (strlen($name) >= 2) && ctype_alnum($name);
     }

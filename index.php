@@ -38,10 +38,35 @@
     
     //Default route
     $f3->route('GET|POST /new-pet', function($f3) {
+        
+        
         //if the form has been submitted
         if(isset($_POST['submit'])) {
-            print_r($_POST);
+            //print_r($_POST);
+            //Array ( [pet-name] => [pet-color] => Black [pet-type] => [submit] => Submit )
+            
+            //get the form data
+            $color = $_POST['pet-color'];
+            $type = $_POST['pet-type'];
+            $name = $_POST['pet-name'];
+            
+            //validate
+            include('model/validation-functions.php');
+            
+            if(!validColor($color)) {
+                echo "<p>color is not valid<p>";
+            }
+            
+            if(!validName($name)) {
+                echo "<p> name is not valid </p>";
+            }
+            
+            if(!validType($type)) {
+                echo "<p> type is not valid </p>";
+            }
+        
         }
+        
 
         $f3->set('colors', array('Pink', 'Blue', 'Red', 'Green', 'Yellow', 'Orange', 'Purple'));
     
