@@ -47,7 +47,7 @@
                             <?php endif; ?>
                         <div class="col-sm-3">
                             <input class="form-control" type="text" name="pet-name"
-                                   id="pet-name" >
+                                   id="pet-name" value="<?= $name ?>">
                         </div>
                         
                         <!-- Color -->
@@ -60,8 +60,8 @@
                             <?php endif; ?>
                             <select class="form-control" name="pet-color" id="pet-color">
                                 <option>--Select--</option>
-                                <?php foreach (($colors?:[]) as $color): ?>
-                                    <option><?= $color ?></option>
+                                <?php foreach (($colors?:[]) as $colorOption): ?>
+                                    <option <?php if ($colorOption == $color): ?>selected<?php endif; ?>><?= $colorOption ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -74,7 +74,7 @@
                             <?php endif; ?>
                         <div class="col-sm-3">
 
-                            <input class="form-control" type="text" name="pet-type" id="pet-type">
+                            <input class="form-control" type="text" name="pet-type" id="pet-type" value="<?= $type ?>">
                         </div>
                                                 
                     </div>

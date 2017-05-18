@@ -47,7 +47,7 @@
                             </check>
                         <div class="col-sm-3">
                             <input class="form-control" type="text" name="pet-name"
-                                   id="pet-name" >
+                                   id="pet-name" value="{{ @name }}">
                         </div>
                         
                         <!-- Color -->
@@ -60,8 +60,8 @@
                             </check>
                             <select class="form-control" name="pet-color" id="pet-color">
                                 <option>--Select--</option>
-                                <repeat group='{{ @colors }}' value='{{ @color }}'>
-                                    <option>{{ @color }}</option>
+                                <repeat group='{{ @colors }}' value='{{ @colorOption }}'>
+                                    <option <check if="{{ @colorOption == @color }}">selected</check>>{{ @colorOption }}</option>
                                 </repeat>
                             </select>
                         </div>
@@ -74,7 +74,7 @@
                             </check>
                         <div class="col-sm-3">
 
-                            <input class="form-control" type="text" name="pet-type" id="pet-type">
+                            <input class="form-control" type="text" name="pet-type" id="pet-type" value="{{ @type }}">
                         </div>
                                                 
                     </div>
